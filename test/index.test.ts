@@ -25,8 +25,7 @@ describe("YangHui triangle moudle test result",()=>{
       }
     })
   })
-  // 性能测试
-
+  
   // test_1.forEach(([i,j]) => {
   //   test(`迭代法： result [${i},${j}] :`,()=>{
   //     if(i > 15 || j > 15 || i<1 || j < 1 || i < j){
@@ -46,4 +45,7 @@ describe("YangHui triangle moudle test result",()=>{
   //     }
   //   })
   // })
+
+  // 性能测试
+
 })

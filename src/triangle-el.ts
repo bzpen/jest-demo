@@ -23,6 +23,7 @@
 /**
  * 解法一：迭代实现
  *  时间复杂度 O（n^2）
+ * 缺点： 占用空间大 时间复杂度高
  * @param i :number
  * @param j :number
  * @return res :number
@@ -50,6 +51,9 @@ function triangle_1(i:number,j:number):number{
 /**
  * 解法二：递归实现
  * 时间复杂度 O（logn）
+ * 缺点: 占用堆栈空间 层数过高容易爆栈
+ * 改进--》 转化为非递归实现
+ * 
  * @param i :number
  * @param j :number
  * @return res :number
