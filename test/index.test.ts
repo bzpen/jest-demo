@@ -11,10 +11,11 @@ var test_1 = [
 ]
 
 describe("YangHui triangle moudle test result",()=>{
+  // 获取15行杨辉三角
   beforeAll(()=>{
     res = getTriangle(15)
   })
-  
+  // 答案测试
   test_1.forEach(([i,j]) => {
     test(` result [${i},${j}] :`,()=>{
       if(i > 15 || j > 15 || i<1 || j < 1 || i < j){
@@ -24,23 +25,25 @@ describe("YangHui triangle moudle test result",()=>{
       }
     })
   })
-  test_1.forEach(([i,j]) => {
-    test(`迭代法： result [${i},${j}] :`,()=>{
-      if(i > 15 || j > 15 || i<1 || j < 1 || i < j){
-        expect(triangle_1(i,j)).toBe(0)
-      }else{
-        expect(triangle_1(i,j)).toBe(res[i-1][j-1])
-      }
-    })
-  })
+  // 性能测试
 
-  test_1.forEach(([i,j]) => {
-    test(`递归： result [${i},${j}] :`,()=>{
-      if(i > 15 || j > 15 || i<1 || j < 1 || i < j){
-        expect(triangle_2(i,j)).toBe(0)
-      }else{
-        expect(triangle_2(i,j)).toBe(res[i-1][j-1])
-      }
-    })
-  })
+  // test_1.forEach(([i,j]) => {
+  //   test(`迭代法： result [${i},${j}] :`,()=>{
+  //     if(i > 15 || j > 15 || i<1 || j < 1 || i < j){
+  //       expect(triangle_1(i,j)).toBe(0)
+  //     }else{
+  //       expect(triangle_1(i,j)).toBe(res[i-1][j-1])
+  //     }
+  //   })
+  // })
+
+  // test_1.forEach(([i,j]) => {
+  //   test(`递归： result [${i},${j}] :`,()=>{
+  //     if(i > 15 || j > 15 || i<1 || j < 1 || i < j){
+  //       expect(triangle_2(i,j)).toBe(0)
+  //     }else{
+  //       expect(triangle_2(i,j)).toBe(res[i-1][j-1])
+  //     }
+  //   })
+  // })
 })
