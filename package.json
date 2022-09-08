@@ -2,9 +2,10 @@
   "name": "01-demo",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.ts",
   "scripts": {
-    "test": "jest"
+    "test": "jest stairs.test.ts",
+    "test-index": "jest index.test.ts"
   },
   "author": "",
   "license": "ISC",
