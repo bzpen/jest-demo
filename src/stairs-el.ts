@@ -9,7 +9,7 @@
  * 自下而上递推
  * 时间复杂度 O(n)
  * 空间复杂度 O(n)
- * ** 这个算法解决这个问题已经够了 其他方法难度系数增大性能优化效果一搬
+ * ** 这个算法解决这个问题已经够了 其他方法难度系数增大性能优化效果一般
  * 
  * @returns 
  * 
@@ -24,8 +24,8 @@ function getStairsList():Array<number>{
 
 /**
  * 解法二 自上而下递归
- * 时间复杂度 O( n )
- * 空间复杂度  --  O(1)
+ * 时间复杂度 O(n)
+ * 空间复杂度 O(1)
  * 缺点： 利用递归栈 无法通过全部测试 存在爆栈情况 n < 44 通过
  * 
  * 递归转非递归可实现，能递归实现都能够通过自定义栈转化非递归，所以写出递归式，问问如何转非递归式子即可
@@ -37,13 +37,13 @@ function getStairsList():Array<number>{
  * @returns 
  */
 function getStairs_2(n:number):number{
-  if(n === 0)
+  if(n == 0)
     return 0;
-  if(n === 1)
+  if(n == 1)
     return 1;
-  if(n === 2)
+  if(n == 2)
     return 2;
-  return getStairs_2(n-1) + getStairs_2(n-2)
+  return getStairs_2(n - 1) + getStairs_2( n - 2)
 }
 
 export {

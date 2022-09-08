@@ -1,6 +1,6 @@
 import { test,describe,expect,beforeAll } from "@jest/globals"
 
-import { getStairsList } from "../src/stairs-el"
+import { getStairsList,getStairs_2 } from "../src/stairs-el"
 
 import { getStairs } from "../src/stairs"
 
@@ -13,7 +13,7 @@ describe("Stairs Test",()=>{
     res = getStairsList()
   })
 
-  for(let i =0;i<=100;i++){
+  for(let i = 0;i<=10;i++){
     test(`result: [${i}]`,()=>{
       expect(getStairs[i]).toBe(res[i])
     })
