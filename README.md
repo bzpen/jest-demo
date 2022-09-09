@@ -38,3 +38,4 @@
 [ 代码写在 stairs.ts 中]
 - npm install
 - npm run test
+## 3、

@@ -13,9 +13,9 @@ describe("Stairs Test",()=>{
     res = getStairsList()
   })
 
-  for(let i = 0;i<=10;i++){
+  for(let i = 0;i<=43;i++){
     test(`result: [${i}]`,()=>{
-      expect(getStairs[i]).toBe(res[i])
+      expect(getStairs_2(i)).toBe(res[i])
     })
   }
 })
